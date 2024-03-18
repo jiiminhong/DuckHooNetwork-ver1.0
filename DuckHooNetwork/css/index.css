@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "PyeongChangPeace-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PyeongChang-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChang-Bold.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
+@font-face {
+  font-family: "BagelFatOne-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.ex {
+  margin-top: 300px;
+}
+
+.btn {
+  font-family: "NanumSquare";
+}
+
+.navbar {
+  background-color: #ffcb05;
+  height: 75px;
+}
+
+.navbar-brand {
+  font-family: "PyeongChangPeace-Bold";
+  align-items: center;
+}
+
+.nav-link {
+  font-family: "PyeongChang-Bold";
+}
+
+.login-btn {
+  font-size: 16px;
+  background-color: #ffcb05;
+  color: black;
+  border: solid 1px black;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+}
+
+.login-btn:hover {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.tophead {
+  height: 80%;
+  background-color: #ffcb05;
+  background: linear-gradient(to bottom, #ffcb05 75%, white);
+}
+
+.tophead-img {
+  width: 500px;
+  height: 500px;
+}
+
+.tophead-text-wrap {
+  line-height: 80px;
+}
+
+.tophead-text-wrap > p {
+  font-family: "GmarketSansMedium";
+  margin: 0;
+}
+
+.tophead-text-wrap > p:first-child {
+  font-size: 30px;
+}
+
+.tophead-text-wrap > p:nth-child(2) {
+  font-size: 45px;
+  color: #5675e8;
+  font-weight: 700;
+}
+
+.tophead-text-wrap > p:last-child {
+  font-size: 100px;
+  font-family: "BagelFatOne-Regular";
+  color: #ff4f64;
+}
+
+/* main */
+
+.main-wrap {
+}
+
+.main-content {
+  margin: 150px 150px 0px 150px;
+}
+
+.main-title {
+  color: #00509d;
+  font-family: "PyeongChang-Bold";
+}
+
+.main-title > span {
+  font-size: 32px;
+}
+
+.main-title > button {
+  font-size: 16px;
+  color: #00509d;
+  border: solid 1px #00509d;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+}
+
+.main-title > button:hover {
+  color: white;
+  background-color: #00509d;
+  transition: 0.5s;
+}
+
+.main-schedule-content {
+  font-family: "NanumSquare";
+}
+
+.schedule-p {
+  font-family: "NanumSquare";
+}
+
+.schedule-p > p:first-child {
+  font-size: 30px;
+}
+
+.main-schedule-content > p:nth-child(3) {
+  font-weight: bold;
+}
+
+.schedule-img {
+  width: 350px;
+  height: 300px;
+  text-align: center;
+}
