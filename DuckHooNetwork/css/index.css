@@ -31,21 +31,18 @@
   font-weight: normal;
   font-style: normal;
 }
+
+body {
+  font-family: "NanumSquare";
+}
+
 p {
   margin: 0;
   padding: 0;
 }
-.ex {
-  margin-top: 300px;
-}
-
-.btn {
-  font-family: "NanumSquare";
-}
 
 .navbar {
   background-color: #ffcb05;
-  height: 75px;
 }
 
 .navbar-brand {
@@ -73,10 +70,12 @@ p {
   transition: 0.5s;
 }
 
-.tophead {
-  height: 80%;
+header {
+  /* max-height: 80%; */
+  height: 800px;
   background-color: #ffcb05;
-  background: linear-gradient(to bottom, #ffcb05 75%, white);
+  background: linear-gradient(to bottom, #ffcb05 65%, white);
+  margin-bottom: 200px;
 }
 
 .tophead-img {
@@ -111,11 +110,9 @@ p {
 
 /* main */
 
-.main-wrap {
-}
-
 .main-content {
-  margin: 150px 150px 0px 150px;
+  /* margin: 150px 150px 150px 150px; */
+  width: 75%;
 }
 
 .main-title {
@@ -142,16 +139,10 @@ p {
   transition: 0.5s;
 }
 
-.main-schedule-content {
-  font-family: "NanumSquare";
-}
-
-.schedule-p {
-  font-family: "NanumSquare";
-}
-
-.schedule-p > p:first-child {
-  font-size: 30px;
+.schedule-p > a {
+  font-size: 26px;
+  text-decoration: none;
+  color: black;
 }
 
 .main-schedule-content > p:nth-child(3) {
@@ -162,4 +153,71 @@ p {
   width: 350px;
   height: 300px;
   text-align: center;
+}
+
+.main-foodmap-content,
+.main-taxi-content,
+.main-goods-content {
+  margin-top: 200px;
+}
+
+.map-wrap {
+  background-color: #ededed;
+  width: 650px;
+  height: 550px;
+}
+
+.hashtag-wrap {
+  width: 30%;
+}
+
+.hashtag-wrap > button {
+  font-size: 16px;
+  background-color: #ffcb05;
+  border-radius: 50px;
+  /* width: 380px; */
+  width: 100%;
+  height: 60px;
+}
+
+.hashtag-wrap > button:hover {
+  background-color: #ffdb57;
+}
+
+.list-group-item,
+.card-text {
+  font-size: 15px;
+}
+
+.card {
+  width: 18rem;
+  height: 30rem;
+}
+
+.card-img-top {
+  height: 18rem;
+}
+
+.card-btn {
+  font-size: 13px;
+  background-color: #ffcb05;
+  border-radius: 10px;
+  width: 150px;
+  /* height: 30px; */
+  height: 30px;
+}
+
+.card-btn:hover {
+  background-color: #ffdb57;
+}
+
+footer {
+  height: 180px;
+  background-color: #ededed;
+  margin-top: 200px;
+}
+
+.footer-info {
+  color: #acacac;
+  font-size: 14px;
 }
