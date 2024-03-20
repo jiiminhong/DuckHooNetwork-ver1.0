@@ -42,7 +42,13 @@ p {
 }
 
 .navbar {
-  background-color: #ffcb05;
+  height: 80px;
+  background-color: transparent;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.navbar-sticky {
+  background-color: white;
 }
 
 .navbar-brand {
@@ -56,7 +62,7 @@ p {
 
 .login-btn {
   font-size: 16px;
-  background-color: #ffcb05;
+  background-color: transparent;
   color: black;
   border: solid 1px black;
   border-radius: 10px;
@@ -70,12 +76,30 @@ p {
   transition: 0.5s;
 }
 
+/* 헤더 */
+
+.carousel-inner {
+  width: 300vw;
+}
+
+.carousel-item {
+  width: 100vw;
+  float: left;
+}
+
 header {
-  /* max-height: 80%; */
-  height: 800px;
+  /* height: 800px; */
+  height: 80%;
   background-color: #ffcb05;
-  background: linear-gradient(to bottom, #ffcb05 65%, white);
   margin-bottom: 200px;
+}
+
+.carousel-img {
+  padding: 5% 12% 5% 12%;
+}
+
+.header-margin {
+  height: 80px;
 }
 
 .tophead-img {

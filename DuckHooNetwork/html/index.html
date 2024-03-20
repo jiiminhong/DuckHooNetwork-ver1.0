@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="../css/index.css" />
   </head>
 
-  <body class="max-vw-100 overflow-auto d-flex flex-column align-items-center">
+  <body class="vw-100 overflow-auto d-flex flex-column align-items-center">
     <!-- 네이게이션 바 -->
-    <nav class="navbar navbar-expand-lg w-100 px-3 py-1 position-sticky sticky-top">
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg w-100 px-3 py-1 position-fixed fixed-top"
+    >
       <div class="container-fluid">
         <!-- 로고 부분 -->
         <a class="navbar-brand fs-3 d-flex align-text-middle" href="index.html">
@@ -67,17 +70,110 @@
 
           <!-- 로그인 -->
           <div class="login d-flex">
-            <button class="login-btn" type="submit">Login</button>
+            <button class="login-btn" onClick="location.href='login.html'">
+              Login
+            </button>
           </div>
         </div>
       </div>
     </nav>
 
     <!-- 헤더부분 -->
-    <header class="tophead w-100">
+    <header id="tophead" class="tophead w-100">
       <div class="container-fluid">
-        <div class="d-flex mt-5 justify-content-center align-items-center">
-          <div class="w-75 d-flex justify-content-center"> <!--justify-content-end align-items-center-->
+        <div class="header-margin"></div>
+
+        <!-- 캐러셀 -->
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <!-- 인티케이터 버튼 -->
+            <button
+              type="button"
+              id="indicator"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              id="indicator"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              id="indicator"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <!-- 내용 -->
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active justify-content-center"
+              data-bs-interval="5000"
+            >
+              <img
+                src="../images/1.png"
+                class="d-block w-100 carousel-img"
+                alt="..."
+              />
+            </div>
+            <div
+              class="carousel-item justify-content-center"
+              data-bs-interval="5000"
+            >
+              <img
+                src="../images/2.png"
+                class="d-block w-100 carousel-img"
+                alt="..."
+              />
+            </div>
+            <div
+              class="carousel-item justify-content-center"
+              data-bs-interval="5000"
+            >
+              <img
+                src="../images/3.png"
+                class="d-block w-100 carousel-img"
+                alt="..."
+              />
+            </div>
+          </div>
+
+          <!-- 좌우버튼 -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- 요소 -->
+        <!-- <div class="d-flex mt-5 justify-content-center align-items-center">
+          <div class="w-75 d-flex justify-content-center"> 
             <div class="tophead-text-wrap d-flex flex-column justify-content-start align-self-end text-end mb-2 me-5">
               <p>COME BACK</p>
               <p>Canva Girls</p>
@@ -90,7 +186,7 @@
               />
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </header>
 
@@ -99,9 +195,10 @@
       <div class="container-fluid main-wrap">
         <!-- 메인 - 스케쥴 -->
         <div class="main-schedule">
-
           <!-- 메인 - 스케줄 - 타이틀 바 -->
-          <div class="main-title d-flex justify-content-between align-items-center">
+          <div
+            class="main-title d-flex justify-content-between align-items-center"
+          >
             <span>Schedule</span>
             <button type="button" class="btn">More</button>
           </div>
@@ -110,7 +207,11 @@
           <div class="main-schedule-wrap mt-5 d-flex justify-content-between">
             <div class="main-schedule-content">
               <a href="#">
-                <img src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg" alt="" class="schedule-img mb-4">
+                <img
+                  src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg"
+                  alt=""
+                  class="schedule-img mb-4"
+                />
               </a>
               <div class="schedule-p px-2">
                 <a href="#">아이유 단독콘서트</a>
@@ -120,7 +221,11 @@
             </div>
             <div class="main-schedule-content">
               <a href="#">
-                <img src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg" alt="" class="schedule-img mb-4">
+                <img
+                  src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg"
+                  alt=""
+                  class="schedule-img mb-4"
+                />
               </a>
               <div class="schedule-p px-2">
                 <a href="#">아이유 단독콘서트</a>
@@ -130,7 +235,11 @@
             </div>
             <div class="main-schedule-content">
               <a href="#">
-                <img src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg" alt="" class="schedule-img mb-4">
+                <img
+                  src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg"
+                  alt=""
+                  class="schedule-img mb-4"
+                />
               </a>
               <div class="schedule-p px-2">
                 <a href="#">아이유 단독콘서트</a>
@@ -145,17 +254,27 @@
         <div class="main-foodmap">
           <div class="main-foodmap-content">
             <!-- 메인 - 푸드맵 - 타이틀 바 -->
-            <div class="main-title d-flex justify-content-between align-items-center">
+            <div
+              class="main-title d-flex justify-content-between align-items-center"
+            >
               <span># Food Map</span>
               <button type="button" class="btn">More</button>
             </div>
 
             <!-- 메인 - 푸드맵 - 내용 -->
-            <div class="main-foodmap-wrap mt-5 d-flex justify-content-between ms-2">
+            <div
+              class="main-foodmap-wrap mt-5 d-flex justify-content-between ms-2"
+            >
               <div class="map-wrap"></div>
-              <div class="hashtag-wrap d-flex flex-column justify-content-center ">
-                <button type="button" class="btn my-3">#영현아_여기서도_7인분_어때</button>
-                <button type="button" class="btn my-3">#승연아_우즈야_여기야</button>
+              <div
+                class="hashtag-wrap d-flex flex-column justify-content-center"
+              >
+                <button type="button" class="btn my-3">
+                  #영현아_여기서도_7인분_어때
+                </button>
+                <button type="button" class="btn my-3">
+                  #승연아_우즈야_여기야
+                </button>
                 <button type="button" class="btn my-3">#먹어봤도영</button>
                 <button type="button" class="btn my-3">#ㄷㅂㅇㅈ</button>
                 <button type="button" class="btn my-3">#제노의_맛그딩어</button>
@@ -168,51 +287,83 @@
         <div class="main-taxi">
           <div class="main-taxi-content">
             <!-- 메인 - 택시 - 타이틀 바 -->
-            <div class="main-title d-flex justify-content-between align-items-center">
+            <div
+              class="main-title d-flex justify-content-between align-items-center"
+            >
               <span>Taxi</span>
               <button type="button" class="btn">More</button>
             </div>
 
             <!-- 메인 - 택시 - 내용 -->
             <div class="list-group main-taxi-wrap mt-5">
-              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action"
+                aria-current="true"
+              >
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">인천 방향 3명 구합니다</h5>
                   <small>3 hours ago</small>
                 </div>
-                <p class="mb-2">부평역까지 타고 가실 분 3분 더 구합니다. 현재 2명 모였습니다.</p>
+                <p class="mb-2">
+                  부평역까지 타고 가실 분 3분 더 구합니다. 현재 2명 모였습니다.
+                </p>
                 <small>더치페이</small>
               </a>
-              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action"
+                aria-current="true"
+              >
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">인천 방향 3명 구합니다</h5>
                   <small>3 hours ago</small>
                 </div>
-                <p class="mb-2">부평역까지 타고 가실 분 3분 더 구합니다. 현재 2명 모였습니다.</p>
+                <p class="mb-2">
+                  부평역까지 타고 가실 분 3분 더 구합니다. 현재 2명 모였습니다.
+                </p>
                 <small>더치페이</small>
               </a>
-              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action"
+                aria-current="true"
+              >
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">인천 방향 3명 구합니다</h5>
                   <small>3 hours ago</small>
                 </div>
-                <p class="mb-2">부평역까지 타고 가실 분 3분 더 구합니다. 현재 2명 모였습니다.</p>
+                <p class="mb-2">
+                  부평역까지 타고 가실 분 3분 더 구합니다. 현재 2명 모였습니다.
+                </p>
                 <small>더치페이</small>
               </a>
-              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action"
+                aria-current="true"
+              >
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">인천 방향 3명 구합니다</h5>
                   <small>3 hours ago</small>
                 </div>
-                <p class="mb-2">부평역까지 타고 가실 분 3분 더 구합니다. 현재 2명 모였습니다.</p>
+                <p class="mb-2">
+                  부평역까지 타고 가실 분 3분 더 구합니다. 현재 2명 모였습니다.
+                </p>
                 <small>더치페이</small>
               </a>
-              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action"
+                aria-current="true"
+              >
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">인천 방향 3명 구합니다</h5>
                   <small>3 hours ago</small>
                 </div>
-                <p class="mb-2">부평역까지 타고 가실 분 3분 더 구합니다. 현재 2명 모였습니다.</p>
+                <p class="mb-2">
+                  부평역까지 타고 가실 분 3분 더 구합니다. 현재 2명 모였습니다.
+                </p>
                 <small>더치페이</small>
               </a>
             </div>
@@ -223,41 +374,73 @@
         <div class="main-goods">
           <div class="main-goods-content">
             <!-- 메인 - 굿즈 - 타이틀 바 -->
-            <div class="main-title d-flex justify-content-between align-items-center">
+            <div
+              class="main-title d-flex justify-content-between align-items-center"
+            >
               <span>Goods Market</span>
               <button type="button" class="btn">More</button>
             </div>
 
             <!--  메인 - 굿즈 - 내용 -->
             <div class="main-goods-wrap mt-5 d-flex justify-content-between">
-              <div class="card" style="width: 18rem;">
-                <img src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column justify-content-between">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
                   <div class="card-content">
                     <h5 class="card-title">2024 시그 포카 판매합니다</h5>
-                    <p class="card-text">2024년 시그 포카 누구 제외 전원 미공포 0.5로 판매합니다</p>
+                    <p class="card-text">
+                      2024년 시그 포카 누구 제외 전원 미공포 0.5로 판매합니다
+                    </p>
                   </div>
-                  <a href="#" class="btn card-btn mt-3 align-self-center ">본문으로</a>
+                  <a href="#" class="btn card-btn mt-3 align-self-center"
+                    >본문으로</a
+                  >
                 </div>
               </div>
-              <div class="card" style="width: 18rem;">
-                <img src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column justify-content-between">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
                   <div class="card-content">
                     <h5 class="card-title">2024 시그 포카 판매합니다</h5>
-                    <p class="card-text">2024년 시그 포카 누구 제외 전원 미공포 0.5로 판매합니다</p>
+                    <p class="card-text">
+                      2024년 시그 포카 누구 제외 전원 미공포 0.5로 판매합니다
+                    </p>
                   </div>
-                  <a href="#" class="btn card-btn mt-3 align-self-center ">본문으로</a>
+                  <a href="#" class="btn card-btn mt-3 align-self-center"
+                    >본문으로</a
+                  >
                 </div>
               </div>
-              <div class="card" style="width: 18rem;">
-                <img src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg" class="card-img-top" alt="">
-                <div class="card-body d-flex flex-column justify-content-between">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
                   <div class="card-content">
                     <h5 class="card-title">2024 시그 포카 판매합니다</h5>
-                    <p class="card-text">2024년 시그 포카 누구 제외 전원 미공포 0.5로 판매합니다</p>
+                    <p class="card-text">
+                      2024년 시그 포카 누구 제외 전원 미공포 0.5로 판매합니다
+                    </p>
                   </div>
-                  <a href="#" class="btn card-btn mt-3 align-self-center ">본문으로</a>
+                  <a href="#" class="btn card-btn mt-3 align-self-center"
+                    >본문으로</a
+                  >
                 </div>
               </div>
             </div>
@@ -265,16 +448,23 @@
         </div>
       </div>
     </main>
-    
+
     <!-- footer -->
     <footer class="w-100">
       <div class="container-fluid">
         <div class="footer-info m-5">
           <p>서울특별시 금천구 가산디지털n로 대표: XXX</p>
           <p>000-111-2222</p>
-          <p><br>Copyright @jiiminhong  All Rights Reserved.</p>
+          <p><br />Copyright @jiiminhong All Rights Reserved.</p>
         </div>
       </div>
     </footer>
+
+    <script src="../js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
