@@ -11,9 +11,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/index.css" />
+    <script
+      type="text/javascript"
+      src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=hrujra1u7r"
+    ></script>
   </head>
 
-  <body class="vw-100 overflow-auto d-flex flex-column align-items-center">
+  <body class="w-100 overflow-auto d-flex flex-column align-items-center">
     <!-- 네이게이션 바 -->
     <nav
       id="navbar"
@@ -88,6 +92,7 @@
           id="carouselExampleAutoplaying"
           class="carousel slide"
           data-bs-ride="carousel"
+          style="overflow: hidden"
         >
           <div class="carousel-indicators">
             <!-- 인티케이터 버튼 -->
@@ -96,7 +101,7 @@
               id="indicator"
               data-bs-target="#carouselExampleAutoplaying"
               data-bs-slide-to="0"
-              class="active"
+              class="active carousel-btn"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -105,6 +110,7 @@
               id="indicator"
               data-bs-target="#carouselExampleAutoplaying"
               data-bs-slide-to="1"
+              class="carousel-btn"
               aria-label="Slide 2"
             ></button>
             <button
@@ -112,6 +118,7 @@
               id="indicator"
               data-bs-target="#carouselExampleAutoplaying"
               data-bs-slide-to="2"
+              class="carousel-btn"
               aria-label="Slide 3"
             ></button>
           </div>
@@ -152,7 +159,7 @@
 
           <!-- 좌우버튼 -->
           <button
-            class="carousel-control-prev"
+            class="carousel-control-prev carousel-btn"
             type="button"
             data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev"
@@ -161,7 +168,7 @@
             <span class="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            class="carousel-control-next carousel-btn"
             type="button"
             data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="next"
@@ -204,8 +211,10 @@
           </div>
 
           <!-- 메인 - 스케줄 - 내용 -->
-          <div class="main-schedule-wrap mt-5 d-flex justify-content-between">
-            <div class="main-schedule-content">
+          <div
+            class="main-schedule-wrap mt-5 d-flex justify-content-between row"
+          >
+            <div class="main-schedule-content col-8 col-xl-4 mb-4">
               <a href="#">
                 <img
                   src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg"
@@ -219,7 +228,7 @@
                 <p>2024.03.02~2024.03.03</p>
               </div>
             </div>
-            <div class="main-schedule-content">
+            <div class="main-schedule-content col-8 col-lg-4 mb-4">
               <a href="#">
                 <img
                   src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg"
@@ -233,7 +242,7 @@
                 <p>2024.03.02~2024.03.03</p>
               </div>
             </div>
-            <div class="main-schedule-content">
+            <div class="main-schedule-content col-8 col-xl-4">
               <a href="#">
                 <img
                   src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg"
@@ -263,11 +272,11 @@
 
             <!-- 메인 - 푸드맵 - 내용 -->
             <div
-              class="main-foodmap-wrap mt-5 d-flex justify-content-between ms-2"
+              class="main-foodmap-wrap mt-5 d-flex justify-content-between row"
             >
-              <div class="map-wrap"></div>
+              <div id="map" class="map-wrap col-7 col-xl-4 mb-4"></div>
               <div
-                class="hashtag-wrap d-flex flex-column justify-content-center"
+                class="hashtag-wrap d-flex flex-column justify-content-center col-7 col-xl-4"
               >
                 <button type="button" class="btn my-3">
                   #영현아_여기서도_7인분_어때
@@ -382,8 +391,10 @@
             </div>
 
             <!--  메인 - 굿즈 - 내용 -->
-            <div class="main-goods-wrap mt-5 d-flex justify-content-between">
-              <div class="card" style="width: 18rem">
+            <div
+              class="main-goods-wrap mt-5 d-flex justify-content-between row"
+            >
+              <div class="card col-8 col-xl-4 mb-4" style="width: 18rem">
                 <img
                   src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg"
                   class="card-img-top"
@@ -403,7 +414,7 @@
                   >
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-8 col-xl-4 mb-4" style="width: 18rem">
                 <img
                   src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg"
                   class="card-img-top"
@@ -423,7 +434,7 @@
                   >
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-8 col-xl-4" style="width: 18rem">
                 <img
                   src="../images/han-chenxu-YdAqiUkUoWA-unsplash.jpg"
                   class="card-img-top"
@@ -453,8 +464,8 @@
     <footer class="w-100">
       <div class="container-fluid">
         <div class="footer-info m-5">
-          <p>서울특별시 금천구 가산디지털n로 대표: XXX</p>
-          <p>000-111-2222</p>
+          <p>서울특별시 금천구 가산디지털n로 / 대표: 김아나</p>
+          <p>010-123-4567</p>
           <p><br />Copyright @jiiminhong All Rights Reserved.</p>
         </div>
       </div>

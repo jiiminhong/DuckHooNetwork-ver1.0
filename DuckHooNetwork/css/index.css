@@ -16,22 +16,6 @@
 
 @import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 
-@font-face {
-  font-family: "BagelFatOne-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   font-family: "NanumSquare";
 }
@@ -90,7 +74,8 @@ p {
 header {
   /* height: 800px; */
   height: 80%;
-  background-color: #ffcb05;
+  /* background-color: #ffcb05; */
+  background: linear-gradient(#ffcb05 90%, white);
   margin-bottom: 200px;
 }
 
@@ -99,7 +84,7 @@ header {
 }
 
 .header-margin {
-  height: 80px;
+  height: 100px;
 }
 
 .tophead-img {
@@ -192,7 +177,8 @@ header {
 }
 
 .hashtag-wrap {
-  width: 30%;
+  /* width: 30%; */
+  width: 400px;
 }
 
 .hashtag-wrap > button {
@@ -216,9 +202,12 @@ header {
 .card {
   width: 18rem;
   height: 30rem;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .card-img-top {
+  width: 100%;
   height: 18rem;
 }
 
@@ -235,6 +224,7 @@ header {
   background-color: #ffdb57;
 }
 
+/* footer */
 footer {
   height: 180px;
   background-color: #ededed;
