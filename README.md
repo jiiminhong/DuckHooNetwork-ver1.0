@@ -10,7 +10,8 @@
 ## 개요
 - 프로젝트 이름 : 덕후 네트워크 (DuckHooNetwork)
 - 프로젝트 기간 : 2024.03.12 ~ 2024.03.21
-- 사용 언어 및 도구 : HTML, CSS, JavaScript, BootStrap, Figma, Naver Map's Enterprise API
+- 사용 언어 및 도구 : ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) + Naver Map's Enterprise API
+
 - 멤버 : 홍지민
 <br><br><br><br><br>
 
